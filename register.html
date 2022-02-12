@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WallapopJs</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-yellow-600 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">WallaPopJs</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center text-white"
+        >
+          <a
+            href="./register.html"
+            class="flex justify-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+          >
+            Register
+          </a>
+          <a
+            href="./login.html"
+            class="flex justify-center items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+          >
+            Login
+          </a>
+          <a
+            href="/"
+            class="flex justify-center items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="text-gray-600 body-font">
+        <div
+          class="container px-5 py-24 mx-auto flex justify-center items-center"
+        >
+          <div
+            class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col mt-10 md:mt-0"
+          >
+            <h2
+              class="text-gray-600 text-2xl font-bold uppercase mx-auto title-font mb-5"
+            >
+              Register
+            </h2>
+            <form>
+              <div class="relative mb-4">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  >* Name:</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="relative mb-4">
+                <label for="password" class="leading-7 text-sm text-gray-600"
+                  >* Password:</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="Enter a password"
+                  required
+                />
+              </div>
+              <div class="relative mb-4">
+                <label
+                  for="password-repeat"
+                  class="leading-7 text-sm text-gray-600"
+                  >* Repeat password:</label
+                >
+                <input
+                  type="password"
+                  id="password-repeat"
+                  name="password-repeat"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="Enter a password"
+                  required
+                />
+              </div>
+              <button
+                class="text-white bg-yellow-500 border-0 mt-4 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg w-full"
+                type="submit"
+              >
+                Register
+              </button>
+            </form>
+            <p class="text-xs text-gray-500 mt-3">*All fields are required</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
