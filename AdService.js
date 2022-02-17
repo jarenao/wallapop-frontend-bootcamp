@@ -7,7 +7,6 @@ export default {
 
     try {
       response = await fetch(url);
-      // console.log("response", response);
       
     } catch (error) {
       throw new Error("No he podido ir a por los ads");
@@ -19,7 +18,6 @@ export default {
 
     try {
       ads = await response.json();
-      // console.log('ads', ads);
       
     } catch (error) {
       throw new Error("no he podido transformar la respuesta a json");

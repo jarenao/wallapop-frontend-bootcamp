@@ -65,3 +65,9 @@ export function buildAdView(ads) {
 
   return adTemplate;
 }
+
+export function buildNotFoundAdsView() {
+    return `
+    <p class="">En estos momentos no tenemos anuncios... Lo Sentimos</p>
+    `;
+}
