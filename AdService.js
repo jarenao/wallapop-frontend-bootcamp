@@ -7,7 +7,6 @@ export default {
 
     try {
       response = await fetch(url);
-      
     } catch (error) {
       throw new Error("No he podido ir a por los Anuncios");
     }
@@ -35,13 +34,17 @@ export default {
 
     try {
       response = await fetch(url);
-      
+
+      if (!response.ok) {
+        alert("El producto no existe");
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 500);
+        return;
+        // throw new Error("Anuncio no encontrado");
+      }
     } catch (error) {
       throw new Error("No he podido ir a por el anuncio");
-    }
-
-    if (!response.ok) {
-      throw new Error("Anuncio no encontrado");
     }
 
     try {
@@ -50,8 +53,9 @@ export default {
       throw new Error("No he podido transformar la respuesta a json");
     }
 
+    // Preparando el transformer
     const transformedAd = ad;
 
     return transformedAd;
-  }
+  },
 };

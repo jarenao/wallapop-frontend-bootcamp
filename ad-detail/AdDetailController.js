@@ -1,4 +1,4 @@
-import { buildAdDetailView } from "../AdView.js";
+import { buildAdDetailView, buildNotFoundAdsView } from "../AdView.js";
 import AdService from "../AdService.js";
 
 export class AdDetailController {
@@ -8,9 +8,12 @@ export class AdDetailController {
   }
 
   async showAd(adId) {
-    // Controlar que no exista
+    // Controlar que no existe el valor de adId
     if (!adId) {
       alert("Id del anuncio no válido");
+      setTimeout(() => {
+          window.location.href = '/';
+      }, 500);
       return;
     }
 
