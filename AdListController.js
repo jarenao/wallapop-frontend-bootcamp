@@ -1,5 +1,5 @@
 import AdService from "./AdService.js";
-import { buildAdView, buildNotFoundAdsView } from "./AdView.js";
+import { buildAdView, buildAdDetailView, buildNotFoundAdsView } from "./AdView.js";
 
 export class AdListController {
   constructor(adListElement) {
