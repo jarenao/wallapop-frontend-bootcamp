@@ -1,3 +1,5 @@
+import { registerService } from "./register/RegisterService.js";
+
 export default {
   async getAds() {
     const url = "http://localhost:8000/api/ads";
@@ -57,5 +59,26 @@ export default {
     const transformedAd = ad;
 
     return transformedAd;
+  },
+
+  async deleteAd(adId) {
+    const url = `http://localhost:8000/api/ads/${adId}`;
+
+    let response;
+
+    try {
+      response = await fetch(url, {
+        method: "DELETE",
+        headers: {
+          Authorization: "Bearer " + registerService.getLoggedUser(),
+        },
+      });
+    } catch (error) {
+      throw new Error("No he podido borrar el producto");
+    }
+
+    if (!response.ok) {
+      throw new Error("Producto no encontrado");
+    }
   },
 };

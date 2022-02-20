@@ -1,5 +1,6 @@
 import AdService from "./AdService.js";
 import { buildAdView, buildAdDetailView, buildNotFoundAdsView } from "./AdView.js";
+import { RegisterController } from "./register/RegisterController.js";
 
 export class AdListController {
   constructor(adListElement) {

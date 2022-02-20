@@ -217,7 +217,7 @@ export function buildAdDetailView(ads) {
             Back to the list of ads
             </a>
             <button
-            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4 hover:bg-red-600 hover:text-white transition-all"
+            class="delete-product hidden rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4 hover:bg-red-600 hover:text-white transition-all"
             >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
