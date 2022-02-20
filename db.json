@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "password": "$2b$10$BsItPUxqvlTU2SDwnErpRulO4xUu/tCv94sGFwovvm74Ju3RFr/eW",
+      "id": 1
+    },
+    {
+      "username": "user2",
+      "password": "$2b$10$BsItPUxqvlTU2SDwnErpRuo2juZqR.0c/EHVkkMLDV123zKoVEhdW",
+      "id": 2
+    },
+    {
+      "username": "user3",
+      "password": "$2b$10$sjUU7yHNphtv.NNBvGB/2eu0KtfyvgQw31nZgXxP5NupALKqNJyw2",
+      "id": 3
+    },
+    {
+      "username": "user4",
+      "password": "$2b$10$sjUU7yHNphtv.NNBvGB/2euoE5Gu0eH7w6DIaSelqPgwwNzQixPIq",
+      "id": 4
+    },
+    {
+      "username": "asd1",
+      "password": "$2b$10$qT562m3kzWYAun3I10NBXOE7VWQJpgzW5zaU19KsesJKmRe4rTh3a",
+      "id": 5
+    },
+    {
+      "username": "asd2",
+      "password": "$2b$10$qT562m3kzWYAun3I10NBXOE7VWQJpgzW5zaU19KsesJKmRe4rTh3a",
+      "id": 6
+    },
+    {
+      "username": "asd3",
+      "password": "$2b$10$qT562m3kzWYAun3I10NBXOE7VWQJpgzW5zaU19KsesJKmRe4rTh3a",
+      "id": 7
+    }
+  ],
+  "ads": [
+    {
+      "name": "Mesa",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "59",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlk7m2hvyPs_-6oMES-wcrfDiZu7OYCBjAxg&usqp=CAU",
+      "like": "3",
+      "AdType": "sale",
+      "userId": 5,
+      "updatedAt": "2022-02-17T19:02:05.276Z",
+      "id": 1
+    },
+    {
+      "name": "Coche",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "1.585",
+      "image": "https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/480/public/media/image/2020/01/mejores-coches-10000-15000-1855853.jpg?itok=5pYXRSSw",
+      "like": "1.6",
+      "AdType": "buy",
+      "userId": 5,
+      "updatedAt": "2022-02-17T19:03:20.340Z",
+      "id": 2
+    },
+    {
+      "name": "Taza",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "1.585",
+      "image": "https://st4.depositphotos.com/22341038/i/600/depositphotos_257340340-stock-photo-empty-ceramic-cup-isolated-on.jpg",
+      "like": "0.9",
+      "AdType": "sale",
+      "userId": 5,
+      "updatedAt": "2022-02-17T19:05:36.331Z",
+      "id": 3
+    },
+    {
+      "name": "Teléfono",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "300",
+      "image": "https://st3.depositphotos.com/4883005/18678/i/450/depositphotos_186780614-stock-photo-black-screen-of-smartphone-isolated.jpg",
+      "like": "2.1",
+      "AdType": "buy",
+      "userId": 4,
+      "updatedAt": "2022-02-17T19:40:50.580Z",
+      "id": 4
+    },
+    {
+      "name": "Jamón",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "78",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6xhlrYDzs_DcT87zd1K2vclDcE2jCLWjbOQ&usqp=CAU",
+      "like": "5.3",
+      "AdType": "sale",
+      "userId": 4,
+      "updatedAt": "2022-02-17T19:41:59.245Z",
+      "id": 5
+    },
+    {
+      "name": "Globo",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "0.7",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFxXVdp0924zn3IH7KB-4E6eO7i9GyaRX0A&usqp=CAU",
+      "like": "0.1",
+      "AdType": "buy",
+      "userId": 4,
+      "updatedAt": "2022-02-17T19:44:20.048Z",
+      "id": 6
+    },
+    {
+      "name": "Avión",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
+      "price": "150.000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWHYiiTMl94R-mpHZKLZ9Dq1zthQBbMeLWgg&usqp=CAU",
+      "like": "84",
+      "AdType": "buy",
+      "userId": 5,
+      "updatedAt": "2022-02-20T18:13:17.184Z",
+      "id": 7
+    }
+  ]
+}
