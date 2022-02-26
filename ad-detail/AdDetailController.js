@@ -61,7 +61,7 @@ export class AdDetailController {
 
     if (shouldDelete) {
       try {
-        await AdService.deleteAd(this.ads.id);
+        await AdService.deleteAd(this.ad.id);
         window.location.href = "/";
       } catch (error) {
         alert("Este anuncio no es tuyo, no puedes borrarlo");
