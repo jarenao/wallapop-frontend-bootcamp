@@ -34,20 +34,49 @@
           <span class="ml-3 text-xl">WallaPopJs</span>
         </a>
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center text-white nav-bar-buttons"
+          class="md:ml-auto flex text-base justify-center text-white nav-bar-buttons"
         >
-          <a
-            href="./register.html"
-            class="flex justify-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
-          >
-            Register
-          </a>
-          <a
-            href="./login.html"
-            class="flex justify-center items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
-          >
-            Login
-          </a>
+          <div class="flex flex-wrap items-center text-base justify-center">
+            <a
+              href="./register.html"
+              class="flex justify-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+            >
+              Register
+            </a>
+            <a
+              href="./login.html"
+              class="flex justify-center items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+            >
+              Login
+            </a>
+          </div>
+          <div class="hidden flex flex-wrap items-center text-base justify-center">
+            <a
+              href="./create-ad.html"
+              class="flex justify-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+            >
+              Create Ad
+            </a>
+            <a
+              href="/"
+              class="flex justify-center items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                />
+              </svg>
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -67,9 +96,9 @@
             </h3>
           </div>
 
-          <div class="flex flex-wrap -m-4 justify-center products-container">
-            
-          </div>
+          <div
+            class="flex flex-wrap -m-4 justify-center products-container"
+          ></div>
         </div>
       </section>
     </main>
