@@ -3,7 +3,13 @@ import { registerService } from "../register/RegisterService.js";
 export class IsLoginController {
   constructor(buttonsVisiblesIfLogged) {
     this.buttonsVisiblesIfLogged = buttonsVisiblesIfLogged;
+    this.subscribeToEvents();
+  }
+
+  subscribeToEvents() {
     this.isPrivateArea();
+    this.checkUserLoginChangeHeader();
+    this.logout();
   }
 
   // Cambio de header según tipo de Usuario (Guest o Logging)
@@ -63,7 +69,7 @@ export class IsLoginController {
 
   // Listado de areas privadas
   privateArea() {
-    const privateArea = ["create-ad"];
+    const privateArea = ["create-ad", "pepito"];
     return privateArea;
   }
 
@@ -73,7 +79,7 @@ export class IsLoginController {
     const privateArea = this.privateArea();
 
     if (privateArea.includes(url)) {
-      this.isLogin()
+      this.isLogin();
     }
   }
 }
