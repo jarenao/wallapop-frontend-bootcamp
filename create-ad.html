@@ -106,11 +106,10 @@
                   type="text"
                   id="description"
                   name="description"
-                  class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  placeholder="Enter the route of your image"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8"
+                  placeholder="Enter your description"
                   required
-                >
-                </textarea>
+                ></textarea>
               </div>
               <div class="relative mb-4">
                 <label for="price" class="leading-7 text-sm text-gray-600"
@@ -134,9 +133,9 @@
                   <input
                     class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-yellow-500 checked:border-yellow-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                     type="radio"
-                    name="inlineRadioOptions"
+                    name="adType"
                     id="inlineRadio1"
-                    value="option1"
+                    value="buy"
                     required
                   />
                   <label
@@ -149,9 +148,9 @@
                   <input
                     class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-yellow-500 checked:border-yellow-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                     type="radio"
-                    name="inlineRadioOptions"
+                    name="adType"
                     id="inlineRadio2"
-                    value="option2"
+                    value="sale"
                     required
                   />
                   <label
@@ -174,5 +173,6 @@
       </section>
     </main>
     <script type="module" src="./isLogin/isLogin.js"></script>
+    <script type="module" src="./ad-create/adCreate.js"></script>
   </body>
 </html>
