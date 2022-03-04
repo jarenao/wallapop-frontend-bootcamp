@@ -1,8 +1,11 @@
 import { adCreateService } from "./AdCreateService.js";
 
 export class AdCreateController {
+  formSubmitButtonElement = null;
+
   constructor(formAdCreateElement) {
     this.formAdCreateElement = formAdCreateElement;
+    this.formSubmitButtonElement = formAdCreateElement.querySelector("button");
     this.subscribeToEvents();
   }
 
@@ -15,38 +18,39 @@ export class AdCreateController {
     const inputElements = Array.from(
       this.formAdCreateElement.querySelectorAll("input")
     );
+    const inputsRequired = inputElements.filter((inputRequired) => {
+      if (inputRequired.hasAttribute("required")) {
+        return inputRequired;
+      }
+    });
     const textareaElement = this.formAdCreateElement.querySelector("textarea");
 
-    inputElements.forEach((inputElement) => {
-      inputElement.addEventListener("input", () => {
-        // this.checkIfAllInputsAreFilled(inputElements);
+    inputsRequired.forEach((inputRequired) => {
+      inputRequired.addEventListener("input", () => {
+        this.onAnyElementFormChange();
       });
     });
 
     textareaElement.addEventListener("input", () => {
-      // this.checkIfAllInputsAreFilled(textareaElement);
+      this.onAnyElementFormChange();
     });
   }
 
-  checkIfAllInputsAreFilled(inputElements) {
-    const areAllInputsFilled = inputElements.every(
-      (inputElement) => inputElement.value
-    );
+  onAnyElementFormChange() {
+    const isFormValid = this.formAdCreateElement.checkValidity();
 
-    if (areAllInputsFilled) {
-      this.formAdCreateElement
-        .querySelector("button")
-        .removeAttribute("disabled");
-      this.formAdCreateElement
-        .querySelector("button")
-        .classList.remove("disabled:opacity-75", "disabled:bg-yellow-500");
+    if (isFormValid) {
+      this.formSubmitButtonElement.removeAttribute("disabled");
+      this.formSubmitButtonElement.classList.remove(
+        "disabled:opacity-75",
+        "disabled:bg-yellow-500"
+      );
     } else {
-      this.formAdCreateElement
-        .querySelector("button")
-        .setAttribute("disabled", "");
-      this.formAdCreateElement
-        .querySelector("button")
-        .classList.add("disabled:opacity-75", "disabled:bg-yellow-500");
+      this.formSubmitButtonElement.setAttribute("disabled", "");
+      this.formSubmitButtonElement.classList.add(
+        "disabled:opacity-75",
+        "disabled:bg-yellow-500"
+      );
     }
   }
 
