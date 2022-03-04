@@ -36,7 +36,6 @@ export class AdDetailController {
     if (loggedUserToken) {
       const userInfo = decodeToken(loggedUserToken);
       const isOwner = this.isAdOwner(userInfo.userId);
-      console.log(isOwner);
 
       if (isOwner) {
         this.drawDeleteButton();

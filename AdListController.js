@@ -1,6 +1,7 @@
 import AdService from "./AdService.js";
 import { buildAdView, buildAdDetailView, buildNotFoundAdsView } from "./AdView.js";
 import { RegisterController } from "./register/RegisterController.js";
+import { pubSub } from "./shared/pubSub.js";
 
 export class AdListController {
   constructor(adListElement) {
@@ -14,7 +15,10 @@ export class AdListController {
 
       //Controlar si está vacio
       if (ads.length === 0) {
-        this.adListElement.innerHTML = buildNotFoundAdsView();
+        pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        "En estos momentos no hay Anuncios."
+      );
       }
 
       for (const ad of ads) {
@@ -26,6 +30,10 @@ export class AdListController {
         this.adListElement.appendChild(adArticleElement);
       }
     } catch (error) {
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        "Error obteniendo Anuncios"
+      );
       this.adListElement.innerHTML = buildNotFoundAdsView();
     }
   }

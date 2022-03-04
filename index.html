@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WallapopJs</title>
+    <link rel="stylesheet" href="./shared/notification/notification.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <div class="notification"></div>
     <header class="text-gray-400 bg-gray-900 body-font">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
@@ -36,7 +38,9 @@
         <nav
           class="md:ml-auto flex text-base justify-center text-white nav-bar-buttons"
         >
-          <div class="guest flex flex-wrap items-center text-base justify-center">
+          <div
+            class="guest flex flex-wrap items-center text-base justify-center"
+          >
             <a
               href="./register.html"
               class="flex justify-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"
@@ -50,7 +54,9 @@
               Login
             </a>
           </div>
-          <div class="login hidden flex flex-wrap items-center text-base justify-center">
+          <div
+            class="login hidden flex flex-wrap items-center text-base justify-center"
+          >
             <a
               href="./create-ad.html"
               class="flex justify-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 ml-5"

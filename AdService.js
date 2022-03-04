@@ -2,7 +2,7 @@ import { registerService } from "./register/RegisterService.js";
 
 export default {
   async getAds() {
-    const url = "http://localhost:8000/api/ads";
+    const url = "http://localhost:8000/apisss/ads";
 
     let response;
     let ads;

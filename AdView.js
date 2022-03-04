@@ -242,6 +242,6 @@ export function buildAdDetailView(ads) {
 
 export function buildNotFoundAdsView() {
   return `
-    <p class="">En estos momentos no tenemos anuncios... Lo Sentimos</p>
+    <p class="text-center w-full">En estos momentos no tenemos anuncios... Lo Sentimos</p>
     `;
 }
