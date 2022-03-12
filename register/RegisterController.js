@@ -1,3 +1,4 @@
+import { pubSub } from "../shared/pubSub.js";
 import { registerService } from "./RegisterService.js";
 
 export class RegisterController {
@@ -57,14 +58,20 @@ export class RegisterController {
       );
 
       if (!arePasswordsEqual) {
-        alert("Las contraseñas no son iguales");
+        pubSub.publish(
+          pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+          "Las contraseñas no son iguales"
+        );
         return;
       }
 
       const isPasswordValid = this.checkIfPasswordMatchRegExp(passwordInput);
 
       if (!isPasswordValid) {
-        alert("La contraseña debe contener sólo números o letras");
+        pubSub.publish(
+          pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+          "La contraseña debe contener sólo números o letras"
+        );
         return;
       }
 
@@ -86,7 +93,10 @@ export class RegisterController {
       await registerService.createUser(username, passwordInput);
       this.loginUser(username, passwordInput);
     } catch (error) {
-      alert("error en createUser", error);
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `Algo en el registro ha ido mal. Inténtelo más tarde.`
+      );
     }
   }
 
@@ -95,7 +105,10 @@ export class RegisterController {
       await registerService.loginUser(username, passwordInput);
       window.location.href = "/";
     } catch (error) {
-      alert("error en LoginUser", error);
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `Algo en el logueo ha ido mal. Inténtelo más tarde.`
+      );
     }
   }
 }

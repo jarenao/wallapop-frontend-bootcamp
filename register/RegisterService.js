@@ -1,3 +1,4 @@
+import { pubSub } from "../shared/pubSub.js";
 class RegisterService {
   constructor() {}
 
@@ -18,7 +19,10 @@ class RegisterService {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error(data.message);
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `Algo en el registro ha ido mal. Inténtelo más tarde. ${data}`
+      );
     }
   }
 
@@ -37,9 +41,12 @@ class RegisterService {
     });
 
     const data = await response.json();
-    
+
     if (!response.ok) {
-      throw new Error(data.message);
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        data.message
+      );
     }
 
     const token = data.accessToken;

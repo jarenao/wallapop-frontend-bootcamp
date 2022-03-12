@@ -26,10 +26,16 @@ class AdCreateService {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.message);
+        pubSub.publish(
+          pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+          `No se ha podido añadir el producto. ${data.message}`
+        );
       }
     } catch (error) {
-      throw new Error("No se ha podido añadir el producto", error);
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `No se ha podido añadir el producto. ${error}`
+      );
     }
 
   }

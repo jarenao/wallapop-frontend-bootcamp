@@ -1,8 +1,9 @@
 import { registerService } from "./register/RegisterService.js";
+import { pubSub } from "./shared/pubSub.js";
 
 export default {
   async getAds() {
-    const url = "http://localhost:8000/apisss/ads";
+    const url = "http://localhost:8000/api/ads";
 
     let response;
     let ads;
@@ -10,21 +11,30 @@ export default {
     try {
       response = await fetch(url);
     } catch (error) {
-      throw new Error("No he podido ir a por los Anuncios");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `No he podido ir a por los Anuncios. ${error}`
+      );
     }
 
     if (!response.ok) {
-      throw new Error("Anuncios no encontrados");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `Anuncios no encontrados.`
+      );
     }
 
     try {
       ads = await response.json();
     } catch (error) {
-      throw new Error("No he podido transformar la respuesta a json");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `No he podido transformar la respuesta a json. ${error}`
+      );
     }
 
+    // Preparando el transformer
     const transformedAds = ads;
-
     return transformedAds;
   },
 
@@ -38,26 +48,33 @@ export default {
       response = await fetch(url);
 
       if (!response.ok) {
-        alert("El producto no existe");
+        pubSub.publish(
+          pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+          `El producto no existe.`
+        );
         setTimeout(() => {
           window.location.href = "/";
-        }, 500);
+        }, 2000);
         return;
-        // throw new Error("Anuncio no encontrado");
       }
     } catch (error) {
-      throw new Error("No he podido ir a por el anuncio");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `No he podido ir a por el anuncio. ${error}`
+      );
     }
 
     try {
       ad = await response.json();
     } catch (error) {
-      throw new Error("No he podido transformar la respuesta a json");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `No he podido transformar la respuesta a json. ${error}`
+      );
     }
 
     // Preparando el transformer
     const transformedAd = ad;
-
     return transformedAd;
   },
 
@@ -74,11 +91,17 @@ export default {
         },
       });
     } catch (error) {
-      throw new Error("No he podido borrar el producto");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `No he podido borrar el producto. ${error}`
+      );
     }
 
     if (!response.ok) {
-      throw new Error("Producto no encontrado");
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `Producto no encontrado. ${error}`
+      );
     }
   },
 };

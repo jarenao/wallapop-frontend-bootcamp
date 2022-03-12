@@ -20,12 +20,16 @@ export class NotificationController {
 
     const closeButtonElement = this.notificationElement.querySelector("button");
 
-    closeButtonElement.addEventListener("click", (event) => {
-      this.notificationElement.classList.add("alert-out");
-      setTimeout(() => {
-        this.notificationElement.innerHTML = "";
-        this.notificationElement.classList.remove("alert-out");
-      }, 1000);
+    closeButtonElement.addEventListener("click", () => {
+      this.hideToast(200);
     });
+  }
+
+  hideToast(ms) {
+    this.notificationElement.classList.add("alert-out");
+    setTimeout(() => {
+      this.notificationElement.innerHTML = "";
+      this.notificationElement.classList.remove("alert-out");
+    }, ms);
   }
 }

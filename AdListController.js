@@ -18,7 +18,7 @@ export class AdListController {
         pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
         "En estos momentos no hay Anuncios."
-      );
+        );
       }
 
       for (const ad of ads) {

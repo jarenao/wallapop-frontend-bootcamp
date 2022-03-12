@@ -2,6 +2,7 @@ import { registerService } from "../register/RegisterService.js";
 import { buildAdDetailView, buildNotFoundAdsView } from "../AdView.js";
 import AdService from "../AdService.js";
 import { decodeToken } from "../utils/decodeToken.js";
+import { pubSub } from "../shared/pubSub.js";
 
 export class AdDetailController {
   constructor(adDetailElement) {
@@ -48,8 +49,8 @@ export class AdDetailController {
   }
 
   drawDeleteButton() {
-    const buttonDelete = this.adDetailElement.querySelector('.delete-product');
-    buttonDelete.classList.remove('hidden');
+    const buttonDelete = this.adDetailElement.querySelector(".delete-product");
+    buttonDelete.classList.remove("hidden");
     buttonDelete.addEventListener("click", () => {
       this.deleteAd();
     });
@@ -63,9 +64,11 @@ export class AdDetailController {
         await AdService.deleteAd(this.ad.id);
         window.location.href = "/";
       } catch (error) {
-        alert("Este anuncio no es tuyo, no puedes borrarlo");
+        pubSub.publish(
+          pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+          `Algo en el logueo ha ido mal. Inténtelo más tarde. ${error}`
+        );
       }
     }
   }
-
 }

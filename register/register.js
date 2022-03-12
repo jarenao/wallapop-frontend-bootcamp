@@ -1,7 +1,13 @@
-import { RegisterController } from "./RegisterController.js"
+import { RegisterController } from "./RegisterController.js";
+import { NotificationController } from "../shared/notification/NotificationController.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const formElement = document.querySelector("form");
+  const formElement = document.querySelector("form");
+  const notificationElement = document.querySelector(".notification");
 
-    const registerController = new RegisterController(formElement);
-})
+  const notificationController = new NotificationController(
+    notificationElement
+  );
+
+  const registerController = new RegisterController(formElement);
+});

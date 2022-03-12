@@ -1,4 +1,5 @@
 import { registerService } from "../register/RegisterService.js";
+import { pubSub } from "../shared/pubSub.js";
 
 export class LoginController {
   constructor(loginFormElement) {
@@ -59,7 +60,10 @@ export class LoginController {
       await registerService.loginUser(username, password);
       window.location.href = "/";
     } catch (error) {
-      alert('Error en loginUser', error)
+      pubSub.publish(
+        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
+        `Algo en el logueo ha ido mal. Inténtelo más tarde. ${error}`
+      );
     }
   }
 }
