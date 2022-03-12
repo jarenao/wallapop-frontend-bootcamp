@@ -1,7 +1,7 @@
 export function buildAdView(ads) {
   let adTemplate = `
     <div
-    class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+    class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-lg transition-all ease-in-out duration-150"
     >
     <a href="./detail-ad.html?id=${ads.id}">
         <img
