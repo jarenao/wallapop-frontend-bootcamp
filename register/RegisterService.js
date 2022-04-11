@@ -19,10 +19,7 @@ class RegisterService {
     const data = await response.json();
 
     if (!response.ok) {
-      pubSub.publish(
-        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        `Algo en el registro ha ido mal. Inténtelo más tarde. ${data}`
-      );
+      throw new Error(data.message);
     }
   }
 
@@ -43,10 +40,7 @@ class RegisterService {
     const data = await response.json();
 
     if (!response.ok) {
-      pubSub.publish(
-        pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        data.message
-      );
+      throw new Error(data.message);
     }
 
     const token = data.accessToken;

@@ -34,20 +34,49 @@
       "username": "asd3",
       "password": "$2b$10$qT562m3kzWYAun3I10NBXOE7VWQJpgzW5zaU19KsesJKmRe4rTh3a",
       "id": 7
+    },
+    {
+      "username": "qwe1",
+      "password": "$2b$10$CfMaOY0d1Um71qQQx1ShCOPqnstYthioi9RpnJW.rylYRo6CAIE5q",
+      "id": 8
+    },
+    {
+      "username": "qwe2",
+      "password": "$2b$10$yFMGdf72w2LbAHSwa5DaDOJ6vhSwQehEy4yTikk62Hy8/QzZSmOLC",
+      "id": 9
+    },
+    {
+      "username": "asd4",
+      "password": "$2b$10$5eG.ACCqSKYsZHU7Yf8zt.SYeBa7lxjemzXjaQk5zAbUrzpRMO6A2",
+      "id": 10
+    },
+    {
+      "username": "q1",
+      "password": "$2b$10$5eG.ACCqSKYsZHU7Yf8zt.8q2cA6oxRtAbhIJCZC9oUnxGajo813i",
+      "id": 11
+    },
+    {
+      "username": "q2",
+      "password": "$2b$10$5eG.ACCqSKYsZHU7Yf8zt.jJhoiGEfoT/F4UxiMgp/FodoEw8knW2",
+      "id": 12
+    },
+    {
+      "username": "q3",
+      "password": "$2b$10$5eG.ACCqSKYsZHU7Yf8zt.qx5NSh1CWel8cROZb.jOTNv/tZg3sJy",
+      "id": 13
+    },
+    {
+      "username": "qwe5",
+      "password": "$2b$10$5eG.ACCqSKYsZHU7Yf8zt.bKs0dwiwSuqwQWeSHyO.7deryJj2R4e",
+      "id": 14
+    },
+    {
+      "username": "qwe",
+      "password": "$2b$10$5eG.ACCqSKYsZHU7Yf8zt.C8/YdzfEUhD9vTPhoc16Qu61YIeiJtK",
+      "id": 15
     }
   ],
   "ads": [
-    {
-      "name": "Mesa",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
-      "price": "59",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlk7m2hvyPs_-6oMES-wcrfDiZu7OYCBjAxg&usqp=CAU",
-      "like": "3",
-      "AdType": "sale",
-      "userId": 5,
-      "updatedAt": "2022-02-17T19:02:05.276Z",
-      "id": 1
-    },
     {
       "name": "Coche",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut! Necessitatibus eum totam eligendi dolores ullam labore nemo accusantium optio itaque laudantium. Sint, doloremque optio magni sequi dolorum possimus ipsum.\n            Sunt, enim accusantium? Fuga soluta doloribus ipsum eos ut recusandae. Expedita aperiam praesentium, nulla perferendis placeat deserunt impedit dolorem nesciunt voluptatibus, consequuntur quam corporis earum dolorum, eum sequi fugit necessitatibus!\n            Vitae qui in repellat quod consequatur rerum! Quibusdam veritatis ullam numquam voluptates harum esse. Blanditiis sint et officia ex dolorem, dolores soluta numquam libero vitae tenetur, esse non. Nesciunt, at.",
@@ -55,7 +84,7 @@
       "image": "https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/480/public/media/image/2020/01/mejores-coches-10000-15000-1855853.jpg?itok=5pYXRSSw",
       "like": "1.6",
       "AdType": "buy",
-      "userId": 5,
+      "userId": 8,
       "updatedAt": "2022-02-17T19:03:20.340Z",
       "id": 2
     },
@@ -66,7 +95,7 @@
       "image": "https://st4.depositphotos.com/22341038/i/600/depositphotos_257340340-stock-photo-empty-ceramic-cup-isolated-on.jpg",
       "like": "0.9",
       "AdType": "sale",
-      "userId": 5,
+      "userId": 8,
       "updatedAt": "2022-02-17T19:05:36.331Z",
       "id": 3
     },
@@ -77,7 +106,7 @@
       "image": "https://st3.depositphotos.com/4883005/18678/i/450/depositphotos_186780614-stock-photo-black-screen-of-smartphone-isolated.jpg",
       "like": "2.1",
       "AdType": "buy",
-      "userId": 4,
+      "userId": 8,
       "updatedAt": "2022-02-17T19:40:50.580Z",
       "id": 4
     },
@@ -113,6 +142,116 @@
       "userId": 5,
       "updatedAt": "2022-02-20T18:13:17.184Z",
       "id": 7
+    },
+    {
+      "name": "Prueba3",
+      "image": "../shared/images/nodisponible.png",
+      "description": "Prueba 3, parece que va pero no lo tengo claro del todo",
+      "price": "300",
+      "AdType": "sale",
+      "like": "6.36",
+      "userId": 8,
+      "updatedAt": "2022-02-27T12:49:40.742Z",
+      "id": 10
+    },
+    {
+      "name": "Prueba4",
+      "image": "https://solucionesymediaciones.es/wp-content/uploads/2019/06/balcon.jpg",
+      "description": "Un balcón bonito para disfrutar de las calvas de los demás",
+      "price": "56",
+      "AdType": "sale",
+      "like": "2.50",
+      "userId": 8,
+      "updatedAt": "2022-02-27T12:57:24.180Z",
+      "id": 11
+    },
+    {
+      "name": "Risa",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCsPXDwTlHAk18J6xHWnwg4visdnRkhTfRw&usqp=CAU",
+      "description": "Vendo 1 kilo de risas a precio módico. Te quedas agustísimo.",
+      "price": "1000",
+      "AdType": "sale",
+      "like": "5.78",
+      "userId": 9,
+      "updatedAt": "2022-02-27T13:04:14.513Z",
+      "id": 12
+    },
+    {
+      "name": "Invitación",
+      "image": "../shared/images/nodisponible.png",
+      "description": "Se regala invitación a darle a un botón. Solo hay que comprar un boli que vale, na, o casi na...",
+      "price": "950",
+      "AdType": "buy",
+      "like": "3.49",
+      "userId": 9,
+      "updatedAt": "2022-02-27T13:07:58.080Z",
+      "id": 13
+    },
+    {
+      "name": "Chocos Fritos",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokb2tpVxbYJuoWp1tvAlo_iLG9jMRyxPCdQ&usqp=CAU",
+      "description": "Un buen plato de choquitos fritos. A eso, nadie le dice que no. Pues tú tampoco, cómpramelo ome",
+      "price": "26",
+      "AdType": "sale",
+      "like": "3.48",
+      "userId": 9,
+      "updatedAt": "2022-02-27T14:08:29.690Z",
+      "id": 14
+    },
+    {
+      "name": "Aguacate",
+      "image": "https://image.freepik.com/foto-gratis/aguacate-aislado-sobre-fondo-blanco_93675-85426.jpg",
+      "description": "Solo me queda 1. Bueno, la mitad, pero no sé qué hacer con él.",
+      "price": "1",
+      "AdType": "sale",
+      "like": "2.37",
+      "userId": 9,
+      "updatedAt": "2022-02-27T18:34:14.214Z",
+      "id": 15
+    },
+    {
+      "name": "Cable",
+      "image": "../shared/images/nodisponible.png",
+      "description": "Compro cable. Bueno, bonito y no auto enrollable...",
+      "price": "10",
+      "AdType": "buy",
+      "like": "2.08",
+      "userId": 9,
+      "updatedAt": "2022-03-04T16:53:16.866Z",
+      "id": 16
+    },
+    {
+      "name": "Plato de la abuela",
+      "image": "https://i.pinimg.com/736x/c9/15/e7/c915e7b427b1fa426bdfcb27c8c95d81.jpg",
+      "description": "A mi abuela le falta un plato para completar su colección. Está preocupada por si no lo consigue. ",
+      "price": "1600",
+      "AdType": "buy",
+      "like": "2.81",
+      "userId": 9,
+      "updatedAt": "2022-03-04T18:47:56.601Z",
+      "id": 17
+    },
+    {
+      "name": "Zapato",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtt-rtubj8TZkffB8ZytWQLEt9nFSzvtrCQ&usqp=CAU",
+      "description": "Busco algo parecido pero sin usar y muy barato",
+      "price": "10",
+      "AdType": "buy",
+      "like": "2.78",
+      "userId": 11,
+      "updatedAt": "2022-03-12T08:36:48.813Z",
+      "id": 18
+    },
+    {
+      "name": "Caña de pescar",
+      "image": "https://image.made-in-china.com/155f0j00vwgTjStJLepc/Customized-26-prime-prime-to-32-prime-prime-E-Glass-Fishing-Rod-and-Combo-for-Ice-Fishing.jpg",
+      "description": "Necesito una caña...",
+      "price": "1000",
+      "AdType": "buy",
+      "like": "1.99",
+      "userId": 15,
+      "updatedAt": "2022-04-11T18:28:21.479Z",
+      "id": 19
     }
   ]
 }

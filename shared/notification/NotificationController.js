@@ -1,6 +1,8 @@
 import { buildNotificationView } from "./NotificationView.js";
 import { pubSub } from "../pubSub.js";
 
+// let promesa = sleep(3000);
+
 export class NotificationController {
   constructor(notificationElement) {
     this.notificationElement = notificationElement;
@@ -23,6 +25,7 @@ export class NotificationController {
     closeButtonElement.addEventListener("click", () => {
       this.hideToast(200);
     });
+    // this.hideToastPromise();
   }
 
   hideToast(ms) {
@@ -32,4 +35,25 @@ export class NotificationController {
       this.notificationElement.classList.remove("alert-out");
     }, ms);
   }
+
+  // hideToastPromise() {
+  //   this.sleep(000)
+  //     .then((result) => {
+  //       this.notificationElement.classList.add("alert-out");
+  //       return this.sleep(200);
+  //     })
+  //     .then(() => {
+  //       this.notificationElement.innerHTML = "";
+  //       this.notificationElement.classList.remove("alert-out");
+  //       return this.sleep(200);
+  //     });
+  // }
+  // // función que devuelve una promesa
+  // sleep(ms) {
+  //   return new Promise((resolve, reject) => {
+  //     setTimeout(function () {
+  //       resolve("resultado");
+  //     }, ms);
+  //   });
+  // }
 }

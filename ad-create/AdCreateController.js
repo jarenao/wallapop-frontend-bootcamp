@@ -86,7 +86,7 @@ export class AdCreateController {
     } catch (error) {
       pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        `Algo en el logueo ha ido mal. Inténtelo más tarde. ${error}`
+        `Algo ha ido mal. <br> ${error}`
       );
     }
   }

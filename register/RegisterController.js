@@ -95,7 +95,7 @@ export class RegisterController {
     } catch (error) {
       pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        `Algo en el registro ha ido mal. Inténtelo más tarde.`
+        `Algo en el registro ha ido mal. ${error}`
       );
     }
   }
@@ -107,7 +107,7 @@ export class RegisterController {
     } catch (error) {
       pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        `Algo en el logueo ha ido mal. Inténtelo más tarde.`
+        `Algo ha ido mal. <br> ${error}`
       );
     }
   }
